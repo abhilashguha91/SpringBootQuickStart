@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.demo.springboot</groupId>
+  <artifactId>SpringBootQuickStart</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Spring Boot Demo API</name>
+  
+  <!-- This parent tag is basically declaring that our project 
+		is a child to this pre-written parent project -->
+  <!--  Parent and child are maven concepts, the idea is 
+  		for the parent project to have all the configuration part
+  		that the child projects do not need to repeat-->
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>1.4.2.RELEASE</version>
+  </parent>
+  
+  <!-- Spring boot provides convention over configuration, 
+  		this parent project has all the conventional configuration
+  		already mentioned in it which holds true for most of spring
+  		app development-->
+  
+   <dependencies>
+   	<dependency>
+   		<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-web</artifactId>
+   	</dependency>
+   
+   </dependencies>
+  
+</project>
