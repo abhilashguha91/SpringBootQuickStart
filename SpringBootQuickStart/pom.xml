@@ -26,9 +26,17 @@
    	<dependency>
    		<groupId>org.springframework.boot</groupId>
   	<artifactId>spring-boot-starter-web</artifactId>
+  	<exclusions>        
+        <exclusion>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+        </exclusion>
+    </exclusions>
    	</dependency>
    
    </dependencies>
+   
+   
   
 <properties>
 	<java.version>1.8</java.version>
